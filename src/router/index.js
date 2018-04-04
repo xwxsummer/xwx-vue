@@ -2,10 +2,10 @@ import Vue from 'vue'
 import Router from 'vue-router'
 
 /*4个主要页面结构*/
-import home from 'pages/home/home'
-import sports from 'pages/sports/sports'
-import travels from 'pages/travels/travels'
-import user from 'pages/user/user'
+import home from '../pages/home'
+import sports from '../pages/sports'
+import travels from '../pages/travels'
+import user from '../pages/user'
 
 Vue.use(Router)
 
