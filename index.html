@@ -25,4 +25,27 @@
 <div id="app"></div>
 <!-- built files will be auto injected -->
 </body>
+<script>
+  /*响应式布局 start*/
+  function _set_font_size_750() {
+//先留着这个方法，不要删，要给专题调用
+  }
+  function setRootFontSize() {
+    var width = document.documentElement.clientWidth, fontSize;
+    if (width > 540) {
+      width = 540;
+    }
+    fontSize = (width / 10);
+    document.getElementsByTagName('html')[0].style['font-size'] = fontSize + 'px';
+    window.wapParams = {
+      rootFontSize: fontSize,
+      clientWidth: width
+    };
+  }
+  setRootFontSize();
+  window.addEventListener('resize', function() {
+    setRootFontSize();
+  }, false);
+  /*响应式布局 end*/
+</script>
 </html>
